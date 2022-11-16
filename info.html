@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             * {box-sizing: border-box;}
 
         body { 
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: black;
+            background: gray;
           }
           
           .header {
@@ -163,6 +164,40 @@
                  text-align: center;
                  opacity: 0.4;
               }
+
+            * {
+            box-sizing: border-box;
+            }
+
+            /* Create two equal columns that floats next to each other */
+            .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 300px; /* Should be removed. Only for demonstration */
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+
+            .infotext {
+                color: white;
+                font-family: cursive;
+                font-size: x-large;
+                height: 200px;
+                position: relative;
+                margin: 0;
+                position: absolute;
+                top: 30%;
+                left: 25%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                
+            }
               </style>
     </head>
     <body>
@@ -178,9 +213,16 @@
         </div>
 
         <div class="footer">
-            <p>Made by Ethan Kelley | Powered by Lorem Ipsum </p>
+            <p>Made by Ethan Kelley | Powered by Git Hub </p>
           </div>
 
-        Published Page
+          <div class="row">
+            <div>
+              <img src="infophoto.png" style="width:100%">
+            </div>
+              <p class="infotext">Sydney Skaggs is a teen photographer based out of Belton, Texas.<br> <br> Sydney has experiance in shooting family photos, senior portraits,and <br> couples shoots, as well as being experianced in shooting social events,<br>  having regularly shot for First Babtist Church Belton. Sydney <br> also is experianced in shooting sporting events of all kinds <br> having shot for the Belton Tigers for over two years now!</p>
+            </div>
+          </div>
+          
     </body>
 </html>
